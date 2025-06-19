@@ -113,7 +113,8 @@ Mỗi bài viết bao gồm 4 trường dữ liệu:
 - Phương thức: `POST`
 
 - Kết quả trả về:  
-  Một bài viết mới với `id` được tạo tự động (mô phỏng). Server phản hồi lại toàn bộ nội dung đã gửi.
+ ![image](https://github.com/user-attachments/assets/712ccd29-96c1-4b25-a791-8378d20b0da4)
+
 
 - Mục đích:  
   `POST` được dùng để gửi dữ liệu mới lên server.  
@@ -132,7 +133,8 @@ Mỗi bài viết bao gồm 4 trường dữ liệu:
 - Phương thức: `PUT`
 
 - Kết quả trả về:  
-  Bài viết có `id = 1` được thay thế toàn bộ bằng nội dung mới bạn gửi.
+  ![image](https://github.com/user-attachments/assets/25db7645-4985-47ee-8a96-581e7f9c198b)
+
 
 - Mục đích:  
   `PUT` dùng để cập nhật toàn bộ một đối tượng.  
@@ -149,7 +151,8 @@ Mỗi bài viết bao gồm 4 trường dữ liệu:
 - Phương thức: `PATCH`
 
 - Kết quả trả về:  
-  Bài viết có `id = 1` được cập nhật một phần (ví dụ: chỉ thay đổi tiêu đề hoặc nội dung).
+  ![image](https://github.com/user-attachments/assets/51419383-68b3-4a38-b243-c1e3964681be)
+
 
 - Mục đích:  
   `PATCH` được dùng để cập nhật từng phần của một đối tượng.  
@@ -167,7 +170,8 @@ Mỗi bài viết bao gồm 4 trường dữ liệu:
 - Phương thức: `DELETE`
 
 - Kết quả trả về:  
-  `{}` (rỗng) hoặc mã trạng thái `200 OK`, `204 No Content`.
+ ![image](https://github.com/user-attachments/assets/8057cf34-62cf-4fd8-9be5-7ee682577207)
+
 
 - Mục đích:  
   `DELETE` dùng để xoá tài nguyên khỏi server.  
