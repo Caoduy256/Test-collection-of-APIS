@@ -92,7 +92,8 @@ Mỗi bài viết bao gồm 4 trường dữ liệu:
 - Phương thức: `GET`
 
 - Kết quả trả về:  
-  Danh sách 100 bài viết dưới dạng mảng JSON.
+  ![image](https://github.com/user-attachments/assets/ac954892-ef61-4527-aede-ff192d0c4e9f)
+
 
 - Mục đích:  
   `GET` là phương thức phổ biến nhất để truy xuất dữ liệu.  
