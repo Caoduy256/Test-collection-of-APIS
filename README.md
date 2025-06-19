@@ -66,10 +66,6 @@ Dữ liệu phản hồi từ API có cấu trúc như sau:
   "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum..."
 }
 ```
-# Gửi Yêu Cầu CRUD Đến API Bằng Postman
-
-## Cấu trúc Dữ liệu Bài viết
-
 Mỗi bài viết bao gồm 4 trường dữ liệu:
 
 | Trường   | Kiểu dữ liệu | Mô tả                          |
