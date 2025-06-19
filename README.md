@@ -81,4 +81,108 @@ Mỗi bài viết bao gồm 4 trường dữ liệu:
 - ❌ **Không cần xác thực**
 - 🌐 **Không yêu cầu internet tốc độ cao**
 - 🔁 **Dữ liệu không thay đổi phía server**, phù hợp để **thử nghiệm lặp lại**
+## 🔹  Bước 3: Thực hành Gửi Request CRUD từng bước
+## ✅ 1. Lấy danh sách bài viết (GET)
+
+- 🔗 **URL:**  
+  `https://jsonplaceholder.typicode.com/posts`
+
+- 📥 **Phương thức:** `GET`
+
+- 📤 **Kết quả trả về:**  
+  Danh sách 100 bài viết dưới dạng mảng JSON.
+
+- 📌 **Ý nghĩa:**  
+  `GET` là phương thức phổ biến nhất để **truy xuất dữ liệu**.  
+  Cho phép client (web, mobile, tester...) lấy thông tin từ server **mà không làm thay đổi dữ liệu**.  
+  Dùng để:
+  - Hiển thị danh sách bài viết
+  - Đối chiếu sau khi cập nhật/xoá
+  - Hiểu cấu trúc và tình trạng dữ liệu ban đầu
+
+---
+
+## ✅ 2. Tạo bài viết mới (POST)
+
+- 🔗 **URL:**  
+  `https://jsonplaceholder.typicode.com/posts`
+
+- 📥 **Phương thức:** `POST`
+
+- 📤 **Kết quả trả về:**  
+  Một bài viết mới với `id` được tạo tự động (mô phỏng). Server phản hồi lại toàn bộ nội dung đã gửi.
+
+- 📌 **Ý nghĩa:**  
+  `POST` được dùng để **gửi dữ liệu mới** lên server.  
+  Dùng khi:
+  - Tạo bài viết mới
+  - Gửi biểu mẫu
+  - Tạo tài khoản,...
+
+  ⚠️ JSONPlaceholder không lưu thật dữ liệu nhưng phản hồi như server thật → Giúp thực hành tốt luồng `client → server`.
+
+---
+
+## ✅ 3. Ghi đè toàn bộ bài viết (PUT)
+
+- 🔗 **URL:**  
+  `https://jsonplaceholder.typicode.com/posts/1`
+
+- 📥 **Phương thức:** `PUT`
+
+- 📤 **Kết quả trả về:**  
+  Bài viết có `id = 1` được thay thế toàn bộ bằng nội dung mới bạn gửi.
+
+- 📌 **Ý nghĩa:**  
+  `PUT` dùng để **cập nhật toàn bộ** một đối tượng.  
+  - Ghi đè toàn bộ tài nguyên hiện tại.
+  - Phải truyền **đầy đủ tất cả các trường**, kể cả không thay đổi.
+  
+  📝 Thường dùng khi chỉnh sửa một biểu mẫu đầy đủ, ví dụ: hồ sơ cá nhân.
+
+---
+
+## ✅ 4. Sửa một phần bài viết (PATCH)
+
+- 🔗 **URL:**  
+  `https://jsonplaceholder.typicode.com/posts/1`
+
+- 📥 **Phương thức:** `PATCH`
+
+- 📤 **Kết quả trả về:**  
+  Bài viết có `id = 1` được cập nhật **một phần** (ví dụ: chỉ thay đổi tiêu đề hoặc nội dung).
+
+- 📌 **Ý nghĩa:**  
+  `PATCH` được dùng để **cập nhật từng phần** của một đối tượng.  
+  - Không ghi đè toàn bộ như `PUT`
+  - Tối ưu băng thông
+  - Thể hiện rõ ý định cập nhật một phần
+
+  ⚠️ Khi kiểm thử API, cần phân biệt rõ giữa `PUT` và `PATCH` vì nhiều hệ thống xử lý khác nhau.
+
+---
+
+## ✅ 5. Xoá bài viết (DELETE)
+
+- 🔗 **URL:**  
+  `https://jsonplaceholder.typicode.com/posts/1`
+
+- 📥 **Phương thức:** `DELETE`
+
+- 📤 **Kết quả trả về:**  
+  `{}` (rỗng) hoặc mã trạng thái `200 OK`, `204 No Content`.
+
+- 📌 **Ý nghĩa:**  
+  `DELETE` dùng để **xoá tài nguyên khỏi server**.  
+  Thường dùng để:
+  - Xoá bài viết
+  - Huỷ đơn hàng
+  - Xoá tài khoản,...
+
+  ⚠️ Trong JSONPlaceholder, dữ liệu không xoá thật nhưng phản hồi giúp thực hành như thật.
+
+---
+
+> 🛠 *Môi trường kiểm thử đề xuất: Postman Desktop App (Windows)*  
+> *Không yêu cầu xác thực hoặc internet tốc độ cao*
 
