@@ -94,7 +94,7 @@ Mỗi bài viết bao gồm 4 trường dữ liệu:
 - Kết quả trả về:  
   Danh sách 100 bài viết dưới dạng mảng JSON.
 
-- Ý nghĩa:  
+- Mục đích:  
   `GET` là phương thức phổ biến nhất để truy xuất dữ liệu.  
   Cho phép client (web, mobile, tester...) lấy thông tin từ server mà không làm thay đổi dữ liệu.  
   Dùng để:
@@ -114,7 +114,7 @@ Mỗi bài viết bao gồm 4 trường dữ liệu:
 - Kết quả trả về:  
   Một bài viết mới với `id` được tạo tự động (mô phỏng). Server phản hồi lại toàn bộ nội dung đã gửi.
 
-- Ý nghĩa:  
+- Mục đích:  
   `POST` được dùng để gửi dữ liệu mới lên server.  
   Dùng khi:
   - Tạo bài viết mới
@@ -133,7 +133,7 @@ Mỗi bài viết bao gồm 4 trường dữ liệu:
 - Kết quả trả về:  
   Bài viết có `id = 1` được thay thế toàn bộ bằng nội dung mới bạn gửi.
 
-- Ý nghĩa:  
+- Mục đích:  
   `PUT` dùng để cập nhật toàn bộ một đối tượng.  
   - Ghi đè toàn bộ tài nguyên hiện tại.
   - Phải truyền đầy đủ tất cả các trường, kể cả không thay đổi.
@@ -150,7 +150,7 @@ Mỗi bài viết bao gồm 4 trường dữ liệu:
 - Kết quả trả về:  
   Bài viết có `id = 1` được cập nhật một phần (ví dụ: chỉ thay đổi tiêu đề hoặc nội dung).
 
-- Ý nghĩa:  
+- Mục đích:  
   `PATCH` được dùng để cập nhật từng phần của một đối tượng.  
   - Không ghi đè toàn bộ như `PUT`
   - Tối ưu băng thông
@@ -168,7 +168,7 @@ Mỗi bài viết bao gồm 4 trường dữ liệu:
 - Kết quả trả về:  
   `{}` (rỗng) hoặc mã trạng thái `200 OK`, `204 No Content`.
 
-- Ý nghĩa:  
+- Mục đích:  
   `DELETE` dùng để xoá tài nguyên khỏi server.  
   Thường dùng để:
   - Xoá bài viết
