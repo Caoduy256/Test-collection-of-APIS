@@ -179,3 +179,12 @@ Mỗi bài viết bao gồm 4 trường dữ liệu:
   - Xoá bài viết
   - Huỷ đơn hàng
   - Xoá tài khoản,...
+---
+###Tổng kết kết quả
+
+| Kỹ năng                 | Trạng thái           |
+|------------------------|----------------------|
+| Gửi yêu cầu CRUD       | Hoàn thành           |
+| Viết test kiểm tra     | Có kiểm thử          |
+| Hiểu phản hồi API      | Đã phân tích         |
+
