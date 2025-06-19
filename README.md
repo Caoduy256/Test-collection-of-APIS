@@ -1,11 +1,11 @@
-# 📘 Dự án Thực hành Gửi Yêu cầu CRUD đến API bằng Postman
+#Dự án Thực hành Gửi Yêu cầu CRUD đến API bằng Postman
 
-## 🔹 Bước 1: Giới thiệu và Mục tiêu Dự án
+##Giới thiệu và Mục tiêu Dự án
 
-### 📌 Giới thiệu ngắn gọn
+###Giới thiệu ngắn gọn
 Trong phát triển phần mềm, đặc biệt là với các ứng dụng web và di động, **API (Application Programming Interface)** đóng vai trò là cầu nối giữa frontend và backend. Việc kiểm thử và gửi yêu cầu đến API là kỹ năng quan trọng với mọi lập trình viên và tester.
 
-### 🎯 Mục tiêu cụ thể
+###Mục tiêu cụ thể
 Dự án này giúp người học:
 
 - Hiểu cách hoạt động của các phương thức HTTP thường dùng:
@@ -28,9 +28,9 @@ Dự án này giúp người học:
 
 ---
 
-## 🔹 Bước 2: Công cụ, Tài nguyên và Dữ liệu Sử dụng
+##Công cụ, Tài nguyên và Dữ liệu Sử dụng
 
-### 🛠️ 1. Công cụ chính
+###1. Công cụ chính
 
 | Công cụ         | Vai trò                                                                 |
 |----------------|-------------------------------------------------------------------------|
@@ -40,7 +40,7 @@ Dự án này giúp người học:
 
 ---
 
-### 🌐 2. API sử dụng – JSONPlaceholder
+###2. API sử dụng – JSONPlaceholder
 
 - Trang chủ: [https://jsonplaceholder.typicode.com](https://jsonplaceholder.typicode.com)
 - Đặc điểm:
@@ -51,7 +51,7 @@ Dự án này giúp người học:
 - **Endpoint sử dụng trong dự án**:
 https://jsonplaceholder.typicode.com/posts
 
-### 📋 3. Cấu trúc Dữ liệu Mẫu
+###3. Cấu trúc Dữ liệu Mẫu
 
 Dữ liệu phản hồi từ API có cấu trúc như sau:
 
@@ -75,14 +75,14 @@ Mỗi bài viết bao gồm 4 trường dữ liệu:
 
 ---
 
-## 🧪 Môi trường Thử nghiệm
+##Môi trường Thử nghiệm
 
-- ✅ **Postman** bản desktop (Windows)
-- ❌ **Không cần xác thực**
-- 🌐 **Không yêu cầu internet tốc độ cao**
-- 🔁 **Dữ liệu không thay đổi phía server**, phù hợp để **thử nghiệm lặp lại**
-## 🔹  Bước 3: Thực hành Gửi Request CRUD từng bước
-## ✅ 1. Lấy danh sách bài viết (GET)
+- **Postman** bản desktop (Windows)
+- **Không cần xác thực**
+- **Không yêu cầu internet tốc độ cao**
+- **Dữ liệu không thay đổi phía server**, phù hợp để **thử nghiệm lặp lại**
+##Thực hành Gửi Request CRUD từng bước
+###1. Lấy danh sách bài viết (GET)
 
 - 🔗 **URL:**  
   `https://jsonplaceholder.typicode.com/posts`
@@ -102,87 +102,74 @@ Mỗi bài viết bao gồm 4 trường dữ liệu:
 
 ---
 
-## ✅ 2. Tạo bài viết mới (POST)
+###2. Tạo bài viết mới (POST)
 
-- 🔗 **URL:**  
+- **URL:**  
   `https://jsonplaceholder.typicode.com/posts`
 
-- 📥 **Phương thức:** `POST`
+- **Phương thức:** `POST`
 
-- 📤 **Kết quả trả về:**  
+- **Kết quả trả về:**  
   Một bài viết mới với `id` được tạo tự động (mô phỏng). Server phản hồi lại toàn bộ nội dung đã gửi.
 
-- 📌 **Ý nghĩa:**  
+- **Ý nghĩa:**  
   `POST` được dùng để **gửi dữ liệu mới** lên server.  
   Dùng khi:
   - Tạo bài viết mới
   - Gửi biểu mẫu
   - Tạo tài khoản,...
-
-  ⚠️ JSONPlaceholder không lưu thật dữ liệu nhưng phản hồi như server thật → Giúp thực hành tốt luồng `client → server`.
-
 ---
 
-## ✅ 3. Ghi đè toàn bộ bài viết (PUT)
+###3. Ghi đè toàn bộ bài viết (PUT)
 
-- 🔗 **URL:**  
+- **URL:**  
   `https://jsonplaceholder.typicode.com/posts/1`
 
-- 📥 **Phương thức:** `PUT`
+- **Phương thức:** `PUT`
 
-- 📤 **Kết quả trả về:**  
+- **Kết quả trả về:**  
   Bài viết có `id = 1` được thay thế toàn bộ bằng nội dung mới bạn gửi.
 
-- 📌 **Ý nghĩa:**  
+- **Ý nghĩa:**  
   `PUT` dùng để **cập nhật toàn bộ** một đối tượng.  
   - Ghi đè toàn bộ tài nguyên hiện tại.
   - Phải truyền **đầy đủ tất cả các trường**, kể cả không thay đổi.
-  
-  📝 Thường dùng khi chỉnh sửa một biểu mẫu đầy đủ, ví dụ: hồ sơ cá nhân.
 
 ---
 
-## ✅ 4. Sửa một phần bài viết (PATCH)
+###4. Sửa một phần bài viết (PATCH)
 
-- 🔗 **URL:**  
+- **URL:**  
   `https://jsonplaceholder.typicode.com/posts/1`
 
-- 📥 **Phương thức:** `PATCH`
+- **Phương thức:** `PATCH`
 
-- 📤 **Kết quả trả về:**  
+- **Kết quả trả về:**  
   Bài viết có `id = 1` được cập nhật **một phần** (ví dụ: chỉ thay đổi tiêu đề hoặc nội dung).
 
-- 📌 **Ý nghĩa:**  
+- **Ý nghĩa:**  
   `PATCH` được dùng để **cập nhật từng phần** của một đối tượng.  
   - Không ghi đè toàn bộ như `PUT`
   - Tối ưu băng thông
   - Thể hiện rõ ý định cập nhật một phần
-
-  ⚠️ Khi kiểm thử API, cần phân biệt rõ giữa `PUT` và `PATCH` vì nhiều hệ thống xử lý khác nhau.
-
 ---
 
-## ✅ 5. Xoá bài viết (DELETE)
+## 5. Xoá bài viết (DELETE)
 
-- 🔗 **URL:**  
+- **URL:**  
   `https://jsonplaceholder.typicode.com/posts/1`
 
-- 📥 **Phương thức:** `DELETE`
+- **Phương thức:** `DELETE`
 
-- 📤 **Kết quả trả về:**  
+- **Kết quả trả về:**  
   `{}` (rỗng) hoặc mã trạng thái `200 OK`, `204 No Content`.
 
-- 📌 **Ý nghĩa:**  
+- **Ý nghĩa:**  
   `DELETE` dùng để **xoá tài nguyên khỏi server**.  
   Thường dùng để:
   - Xoá bài viết
   - Huỷ đơn hàng
   - Xoá tài khoản,...
-
-  ⚠️ Trong JSONPlaceholder, dữ liệu không xoá thật nhưng phản hồi giúp thực hành như thật.
-
 ---
 
-> 🛠 *Môi trường kiểm thử đề xuất: Postman Desktop App (Windows)*  
-> *Không yêu cầu xác thực hoặc internet tốc độ cao*
 
